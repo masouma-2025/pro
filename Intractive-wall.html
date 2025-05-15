@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intractive</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <style>
+   .form-container form {
+    background-color: #ccccff;
+    width: 50%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+h2{
+  text-align: center;
+  padding: 20px;
+}
+.form-container label {
+    display: block;
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="submit"] {
+    display: block;
+    width: 90%;
+    margin: 1em auto;
+    height: 1.9em;
+    font-size: 1rem;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5em;
+}
+
+.form-container input[type="submit"] {
+    background-color: #4a90e2;
+    color: white;
+    cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #357ab7;
+}
+ </style>
+</head>
+<body>
+     <div class="intro-p">
+      <h1>Afghan proverbs</h1>
+      <p>A Journey Through Wisdom and Culture</p>
+    </div>
+   <header>
+    <nav>
+        <div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="proverb-gallary.html">Proverb Gallary</a></li>
+            <li><a href="Intractive-wall.html">Interactive Wall</a></li>
+          </ul>
+        </div>
+        <div>
+          <form>
+            <input type="text" name="search-p" placeholder="search ">
+            <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.099zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+          </button>
+          </form>
+        </div>
+    </nav>
+   </header>
+     <main>
+        <div class="form-container">
+    <h2>Share Your Proverb</h2>
+    <form action="#" method="post">
+        <label for="na">Name:</label>
+        <input type="text" name="user-name" id="na" placeholder="Enter your name" required>
+
+        <label for="pro">Your proverb:</label>
+        <input type="text" name="user-proverb" id="pro" placeholder="Proverb" required>
+        <label for="em">Email:</label>
+        <input type="email" name="user-email" id="em" placeholder="Email">
+        <input type="submit" value="Submit">
+    </form>
+</div>
+     </main>
+    <footer>
+     <p> &copy;2025 Masouma Najafi All rights reserved</p>
+    </footer>
+</body>
+</html>
